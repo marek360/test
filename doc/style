@@ -1,0 +1,22 @@
+.calc {
+    width: 50%;
+}
+
+input {
+    width: 75%;
+    background: lightgrey;
+    color: black;
+    height: 40px;
+    padding: 10px;
+}
+
+button {
+    text-align: center;
+    width: 15%;
+    color: #fdfdfe;
+    background: black;
+    height: 50px;
+}
+.ref{
+    width: 10%;
+}
