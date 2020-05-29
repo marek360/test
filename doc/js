@@ -1,0 +1,30 @@
+let op;
+ let num1;
+ let num2;
+ function btnnumber(e) {
+     let txt = document.getElementById("input");
+     txt.value += e.innerText;
+ }
+ function operation(e) {
+     op = e.innerText;
+     let txt = document.getElementById("input");
+     num1 = parseInt(txt.value);
+     txt.value = '';
+ }
+ function calc() {
+     let txt = document.getElementById("input");
+     let res;
+     num2 = parseInt(txt.value);
+     switch (op.trim()) {
+         case '+' : res = num1 + num2; 
+         case '-' : res = num1 - num2; 
+         case '/' : res = num1 / num2; 
+         case '*' : res = num1 * num2; 
+     }
+     txt.value = res;
+ }
+ function btnrefresh() {
+     let txt = document.getElementById("input");
+     txt.value = '';
+
+ }
